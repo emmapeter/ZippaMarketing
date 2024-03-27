@@ -356,14 +356,15 @@ nav .navlist a:hover {
     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .2);
     width: 100%;
     height: 60vh;
-    border-radius: 10px;
     position: relative;
+    top: -40%;
     background-color: #777777;
     overflow: hidden;
 }
 
 .card .visible img {
     width: 60px;
+    padding: 3%;
 }
 
 .visible {
@@ -380,7 +381,7 @@ nav .navlist a:hover {
 .card .visible  h2 {
     display: flex;
     font-size: 1.5em; 
-    padding: 20px 50px 20px 20px;
+    padding: 20px 70px 20px 20px;
     width: 100%;
     font-weight: var(--h2_font-weight);
     background-color: var(--primary-color);
