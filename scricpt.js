@@ -37,3 +37,24 @@ function setCheckedRadio() {
 document.addEventListener('DOMContentLoaded', function () {
     setInterval(setCheckedRadio, 5000); // Adjusted interval for smoother transition
 });
+
+
+// for button
+
+const buttons = document.querySelectorAll('.gen_btn');
+buttons.forEach(btn => {
+    btn.addEventListener('mouseenter', function(e){
+        let x = e.clientX - e.target.offsetLeft;
+        let y = e.clientY - e.target.offsetTop;
+
+        let ripples = document.createElement('b');
+        ripples.style.left = x +'px';
+        ripples.style.top = y +'px';
+        this.appendChild(ripples);
+
+        setTimeout(() =>{
+            ripples.remove()
+        }, 1000);
+
+    })
+})
