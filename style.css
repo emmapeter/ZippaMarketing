@@ -724,6 +724,9 @@ b {
 
 .data_vid {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     border-bottom: 3px solid var(--boxbkgrd-color);
     box-shadow: 2px 5px black;
