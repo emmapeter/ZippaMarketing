@@ -312,6 +312,7 @@ body {
 
 .logo {
     position: relative;
+    width: 100px;
     align-items: center;
     justify-content: center;
 }
@@ -319,6 +320,7 @@ body {
 .logo img {
     border-radius: 5px;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-self: center;
 }
@@ -413,7 +415,7 @@ nav .navlist a:hover {
 
 }
 
-.section_one_data .data_text h2 {
+.section_one_data .data_text h2 a{
     font-size: var(--h1_font-size);
     font-weight: var(--h1_font-weight);
     color: var(--primary-color);

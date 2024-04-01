@@ -58,3 +58,100 @@ buttons.forEach(btn => {
 
     })
 })
+
+
+
+
+
+
+/*-----------------------------------*\
+  #ABOUT US JS
+\*-----------------------------------*/
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Function to animate the counter
+    function animateCounter(counterElement, targetCount) {
+        let currentCount = 0;
+        const animationDuration = 2000; // Duration in milliseconds
+        const countIncrement = targetCount / (animationDuration / 16); // 60 frames per second
+
+        function updateCounter() {
+            currentCount += countIncrement;
+            counterElement.textContent = Math.floor(currentCount);
+
+            if (currentCount < targetCount) {
+                requestAnimationFrame(updateCounter);
+            } else {
+                counterElement.textContent = targetCount;
+            }
+        }
+
+        updateCounter();
+    }
+
+    // Callback function for the Intersection Observer
+    function handleIntersection(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counters = entry.target.querySelectorAll('.counter');
+                counters.forEach(counter => {
+                    const targetCount = counter.getAttribute('data-count');
+                    animateCounter(counter, targetCount);
+                });
+
+                // Unobserve the target once animation is triggered
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+
+    // Set up the Intersection Observer
+    const observer = new IntersectionObserver(handleIntersection, {
+        root: null, // Use the viewport as the root
+        rootMargin: '0px', // No margin
+        threshold: 0.5, // Trigger when 50% of the target is visible
+    });
+
+    // Target the container to observe
+    const targetContainer = document.getElementById('targetContainer');
+    observer.observe(targetContainer);
+});
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const cardSwiper = new Swiper('.card_swiper', {
+      autoplay: {
+        delay: 3000,
+      },
+      loop: true,
+      spaceBetween: 25,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.next',
+        prevEl: '.prev',
+      },
+      breakpoints: {
+        620: {
+          slidesPerView: 2,
+        },
+        980: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+  
+      },
+    });
+  });

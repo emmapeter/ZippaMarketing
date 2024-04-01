@@ -312,6 +312,7 @@ body {
 
 .logo {
     position: relative;
+    width: 100px;
     align-items: center;
     justify-content: center;
 }
@@ -319,6 +320,7 @@ body {
 .logo img {
     border-radius: 5px;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-self: center;
 }
@@ -475,8 +477,11 @@ b {
     align-items: center;
 }
 
+/*-----------------------------------*\
+  #Slider styles start here
+\*-----------------------------------*/
 
-/* Slider styles start here */
+
 .slider {
     width: 100%;
     height: 100%;
@@ -504,27 +509,33 @@ b {
     align-items: center;
 }
 
-/* Normal slider styles */
+/*-----------------------------------*\
+  #Normal slider styles
+\*-----------------------------------*/
+ 
 .navigation-manual {
     position: absolute;
     width: 100%;
     bottom: 15px;
+    right: 30px;
     display: flex;
-    justify-content: center;
+    flex-direction: column; 
+    justify-content: flex-end;
 }
 
 .manual-btn {
     display: flex;
     align-items: center;
     border-radius: 50%;
-    justify-content: center;
+    justify-content: flex-end;
     cursor: pointer;
     transition: 1s;
+     
 }
 
 
 .manual-btn:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 5px;
 }
 
 .manual-btn:hover {
@@ -548,26 +559,36 @@ b {
 
 }
 
-/* navigation auto start here */
+
+
+
+
+/*-----------------------------------*\
+  #navigation auto start here
+\*-----------------------------------*/
+
+ 
 .navigation-auto {
     position: absolute;
     bottom: 15px;
     display: flex;
+    flex-direction: column;
+     right: 30px;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .navigation-auto div {
     display: flex;
     border-radius: 50%;
-    align-items: center;
-    justify-content: center;
+  
+    justify-content: flex-end;
     cursor: pointer;
     transition: 1s;
 }
 
 .navigation-auto div:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 5px;
 }
 
 #radio1:checked~.navigation-auto .auto-btn1,
@@ -1234,6 +1255,7 @@ footer nav ul li  {
 
     .box_one_text h2 {
         font-size: var(--h2_font-size);
+        line-height: 1.5;
     }
 
     .box_one_text {
@@ -1366,9 +1388,6 @@ footer nav ul li  {
     }
 
 
-    .box_one_text h2 {
-        font-size: var(--h2_font-size);
-    }
 
     .box_one_text {
         width: 70%;
@@ -1404,7 +1423,8 @@ footer nav ul li  {
     }
 
     .box_one_text h2 {
-        font-size: 1.6em;
+        font-size: var(--h2_font-size);
+        line-height: 1.3;
     }
 }
 
