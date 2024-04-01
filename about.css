@@ -236,8 +236,11 @@ nav .navlist a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 90vh;
-    background: linear-gradient(#000000c0, #000000d2), url(img/hero-bg.jpg);
+    height: 100vh;
+    background: linear-gradient(#000000c0, #000000d2), url(img/bk_ser.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
