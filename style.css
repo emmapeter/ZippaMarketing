@@ -535,17 +535,15 @@ b {
     position: absolute;
     width: 100%;
     bottom: 15px;
-    right: 30px;
     display: flex;
-    flex-direction: column; 
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .manual-btn {
     display: flex;
     align-items: center;
     border-radius: 50%;
-    justify-content: flex-end;
+    justify-content: center;
     cursor: pointer;
     transition: 1s;
      
@@ -590,10 +588,8 @@ b {
     position: absolute;
     bottom: 15px;
     display: flex;
-    flex-direction: column;
-     right: 30px;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .navigation-auto div {
@@ -1216,53 +1212,7 @@ footer nav ul li  {
 }
 
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1100px) {}
-
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1024px) {
-    .box_one_text h2 {
-        font-size: 2.3em;
-    }
-
-    .box_one_text {
-        width: 50%;
-
-    }
-
-    .section_three_data {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-
-    .card {
-        top: -25%;
-    }
-
-    .grid-list {
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 20px;
-        width: 100%;
-        column-gap: 30px;
-        padding: 5%;
-    }
-
-
-    .section_four_data {
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 20px;
-        width: 100%;
-        column-gap: 30px;
-        padding: 5%;
-    }
-}
-
-
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 912px) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1100px) {
     header {
         padding: 20px 2%;
     }
@@ -1315,6 +1265,54 @@ footer nav ul li  {
     }
 
 
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1024px) {
+    .box_one_text h2 {
+        font-size: 2.3em;
+    }
+
+    .box_one_text {
+        width: 50%;
+
+    }
+
+    .section_three_data {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .card {
+        top: -25%;
+    }
+
+    .grid-list {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        width: 100%;
+        column-gap: 30px;
+        padding: 5%;
+    }
+
+
+    .section_four_data {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+        width: 100%;
+        column-gap: 30px;
+        padding: 5%;
+    }
+}
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 912px) {
+   
     .section_two_data {
         grid-template-columns: repeat(1, 1fr);
     }
