@@ -142,19 +142,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
-a,
-img,
-span,
-time,
-label,
-input,
-button,
-textarea,
-ion-icon {
-    display: block;
-}
-
+ 
 img {
     height: auto;
 }
@@ -224,37 +212,7 @@ body {
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
-
-
-.btn {
-    max-width: max-content;
-    color: var(--white-1);
-    font-size: var(--fs-6);
-    font-weight: var(--fw-700);
-    padding: 10px 30px;
-    border-radius: var(--radius-5);
-    transition: var(--transition-1);
-}
-
-.btn-primary {
-    background-image: var(--gradient);
-    background-size: 1000%;
-}
-
-.btn-primary:is(:hover, :focus) {
-    background-position: bottom right;
-}
-
-.btn-secondary {
-    background-color: var(--white-1);
-    color: var(--eerie-black);
-}
-
-.btn-secondary:is(:hover, :focus) {
-    background-color: var(--eerie-black);
-    color: var(--white-1);
-}
-
+ 
 .section {
     padding-block: var(--section-padding);
 }
@@ -425,7 +383,7 @@ nav .navlist a:hover {
 }
 
 .box_one_text {
-    width: 80%;
+    width: 70%;
     text-align: center;
     flex-direction: column;
     margin: auto;
@@ -438,34 +396,10 @@ nav .navlist a:hover {
     color: var(--primary-color);
     font-size: var(--h1_font-size);
     font-weight: 300;
-    line-height: 1;
+    padding:  3% 10px;
 }
 
-.gen_btn {
-    position: relative;
-    display: inline-block;
-    color: var(--primary-color);
-    background: var(--main-color);
-    font-size: var(--P_font-size);
-    font-weight: var(--P_font-weight);
-    padding: 18px 26px;
-    border-radius: 8px;
-    margin: 7% 0;
-    text-decoration: none;
-    letter-spacing: 2px;
-    overflow: hidden;
-    font-weight: 600;
-}
-
-b {
-    position: absolute;
-    background: var(--text-hd-color);
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    border-radius: 50%;
-    animation: animate 1s linear infinite;
-}
-
+ 
 .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
@@ -478,6 +412,21 @@ b {
 	font-size: var(--p-text);
 	font-weight: 100;
 	color: var(--primary-color);
+}
+
+.gen-btn {
+    text-decoration: none;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin: auto;
+width: max-content;
+height: auto;
+padding: 15px;
+background-color: var(--main-color);
+color: var(--primary-color);
+border-radius: 50px;
 }
 
 @keyframes animate {
@@ -679,7 +628,7 @@ b {
     display: flex;
     flex-direction: column;
     align-items: end;
-    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .2);
+     
     width: 100%;
     height: 60vh;
     position: relative;
@@ -742,7 +691,7 @@ b {
     flex-direction: column;
     position: absolute;
     bottom: 0;
-    width: 90%;
+    width: 100%;
     left: 0;
     align-items: flex-end;
     overflow: hidden;
