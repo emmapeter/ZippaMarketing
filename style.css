@@ -259,6 +259,8 @@ body {
     padding-block: var(--section-padding);
 }
 
+
+
 .h1,
 .h2,
 .h3 {
@@ -361,7 +363,7 @@ nav .navlist {
 nav .navlist a {
     font-size: var(--p-font);
     color: var(--primary-color);
-    font-family: 500;
+    font-weight: 100;
     margin-left: 40px;
     transition: all .50s ease;
 }
@@ -423,15 +425,19 @@ nav .navlist a:hover {
 }
 
 .box_one_text {
-    width: 40%;
+    width: 80%;
+    text-align: center;
     flex-direction: column;
-    margin: 0px 100px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .box_one_text h2 {
     color: var(--primary-color);
     font-size: var(--h1_font-size);
-    font-weight: var(--h2_font-weight);
+    font-weight: 300;
     line-height: 1;
 }
 
@@ -458,6 +464,20 @@ b {
     pointer-events: none;
     border-radius: 50%;
     animation: animate 1s linear infinite;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+  a span{
+	font-size: var(--p-text);
+	font-weight: 100;
+	color: var(--primary-color);
 }
 
 @keyframes animate {
