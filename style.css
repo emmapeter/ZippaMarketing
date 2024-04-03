@@ -1389,11 +1389,7 @@ footer nav ul li {
 
 
 @media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 640px) {
-
-    .box_one_text {
-       
-        margin: 0 30px;
-    }
+ 
 
     .box_one_text h2 {
         font-size: var(--h2_font-size);
