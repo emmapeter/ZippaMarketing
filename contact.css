@@ -793,10 +793,10 @@ footer nav ul li {
 
     }
 
-    
-.section_two_data {
-    padding: 10%;
-}
+
+    .section_two_data {
+        padding: 10%;
+    }
 
     .section_three_data form h2 {
         font-size: var(--fs-3);
@@ -812,8 +812,8 @@ footer nav ul li {
 
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 912px) {
-   
-    
+
+
 
     .section_two_data {
         grid-template-columns: repeat(1, 1fr);
@@ -822,7 +822,13 @@ footer nav ul li {
 
 
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 820px) {}
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 820px) {
+
+    footer nav ul li {
+        font-size: var(--P_font-size);
+        margin-right: 10px;
+    }
+}
 
 
 

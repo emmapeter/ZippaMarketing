@@ -13,20 +13,20 @@
     font-style: normal;
 
 
- 
+
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
- 
+
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-   
+
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-  
-   
+
+
 
 
 }
@@ -530,7 +530,7 @@ b {
 /*-----------------------------------*\
   #Normal slider styles
 \*-----------------------------------*/
- 
+
 .navigation-manual {
     position: absolute;
     width: 100%;
@@ -546,7 +546,7 @@ b {
     justify-content: center;
     cursor: pointer;
     transition: 1s;
-     
+
 }
 
 
@@ -583,7 +583,7 @@ b {
   #navigation auto start here
 \*-----------------------------------*/
 
- 
+
 .navigation-auto {
     position: absolute;
     bottom: 15px;
@@ -595,7 +595,7 @@ b {
 .navigation-auto div {
     display: flex;
     border-radius: 50%;
-  
+
     justify-content: flex-end;
     cursor: pointer;
     transition: 1s;
@@ -1177,14 +1177,14 @@ footer nav ul {
     margin: 5% 0;
 }
 
-footer nav ul li  {
+footer nav ul li {
     margin-right: 20px;
     color: var(--text-color);
     font-size: var(--h3_font-size);
     font-weight: var(--h3_font-weight);
 }
 
-.footer-text{
+.footer-text {
     font-size: var(--P_font-size);
     font-weight: var(--P_font-weight);
     color: var(--text-color);
@@ -1312,7 +1312,7 @@ footer nav ul li  {
 
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 912px) {
-   
+
     .section_two_data {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -1350,6 +1350,11 @@ footer nav ul li  {
 
     .data_text h2 {
         font-size: 1.5em;
+    }
+
+    footer nav ul li {
+        font-size: var(--P_font-size);
+        margin-right: 10px;
     }
 }
 
