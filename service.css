@@ -520,6 +520,7 @@ a span {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
     align-items: center;
     margin: auto;
     width: max-content;
@@ -603,7 +604,7 @@ a span {
     color: var(--red-crayola);
     font-size: 32px;
     padding: 16px;
-    border-radius: 50%;
+    border-radius: 30%;
     animation: pulse 1.5s ease-out infinite;
 }
 
