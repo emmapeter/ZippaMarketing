@@ -352,6 +352,13 @@ header.sticky {
 }
 
 
+section {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+ }
+ 
 nav .navlist {
     display: flex;
 }
@@ -359,7 +366,7 @@ nav .navlist {
 nav .navlist a {
     font-size: var(--p-font);
     color: var(--primary-color);
-    font-family: 500;
+    font-weight: 100;
     margin-left: 40px;
     transition: all .50s ease;
 }
