@@ -18,10 +18,6 @@
     font-weight: 500;
     font-style: normal;
 
-
-
-
-
 }
 
 
@@ -299,12 +295,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-
-
-
-
+} 
 
 .section_one {
     position: relative;
@@ -597,6 +588,11 @@ a span {
     border-radius: 8px;
 }
 
+
+.section_four_data .data_img img {
+    width: 100%;
+    height: 100%;
+}
 
 .play-btn {
     position: absolute;
