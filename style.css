@@ -372,7 +372,7 @@ nav .navlist a:hover {
 
 
 .box_one {
-    background: linear-gradient(#000000c0, #000000d2), url(img/bk2.jpg);
+    background: linear-gradient(#000000c0, #000000d2), url(img/bk.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -431,7 +431,7 @@ a span {
 
 
 .box_two {
-    background: linear-gradient(#000000c4, #000000be), url(img/bk1.jpg);
+    background: linear-gradient(#000000c4, #000000be), url(img/bk1.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -696,24 +696,23 @@ a span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 20px;
-    width: 100%;
+    
     column-gap: 30px;
     padding: 5%;
 }
 
 .data_vid {
-    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    border-bottom: 3px solid var(--boxbkgrd-color);
-    box-shadow: 2px 5px black;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #777777;
 }
 
 .data_vid video {
-    width: 100%;
-    border-radius: 10px;
+     width: 100%;
+     object-fit: cover;
+     height: 100%;
 }
 
 .data_text {
