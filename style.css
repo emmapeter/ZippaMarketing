@@ -33,7 +33,7 @@
 
     --text-color: #777777;
     --text-hd-color: #e6e3e3;
-    --P_font-size: 1em;
+    --P_font-size: 0.9em;
     --P_font-weight: 300;
 
     --h3_font-size: 1em;
@@ -567,11 +567,13 @@ a span {
 .section_two_data {
     position: relative;
     display: grid;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 20px;
     width: 100%;
     column-gap: 30px;
-    padding: 7% 5% 5% 5%;
+    padding: 5%;
 
 }
 
@@ -584,7 +586,7 @@ a span {
 
 .section_two_box_one h2 {
     font-size: var(--h1_font-size);
-    font-weight: var(--h2_font-weight);
+    font-weight: 5;
     color: var(--primary-color);
 
 }
@@ -687,7 +689,6 @@ a span {
     font-size: 1.5em;
     padding: 15px 70px 15px 15px;
     width: 100%;
-    font-weight: var(--h2_font-weight);
     background-color: var(--text-hd-color);
 }
 
@@ -731,7 +732,7 @@ a span {
 
 .data_text h2 {
     font-size: var(--h2_font-size);
-    font-weight: var(--h2_font-weight);
+     line-height: normal;
     color: var(--secondary-color);
     margin: 3% 0;
 }
@@ -960,6 +961,7 @@ a span {
         box-shadow: 0 0 0 25px transparent;
     }
 }
+
 
 .about :is(.section-title, .section-text) {
     text-align: left;
